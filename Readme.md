@@ -1,6 +1,6 @@
 # Личный проект «Техномарт»
 
-* Студент: [Константин Худин](https://up.htmlacademy.ru/htmlcss/21/user/243579).
+* Студент: 	 [Константин Худин](https://up.htmlacademy.ru/htmlcss/21/user/243579).
 * Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 
 ---
