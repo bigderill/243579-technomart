@@ -3,10 +3,232 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+  	<header class="main-header">
+  		<section class="top-menu-container">
+  			<h2><a class="logo">Техномарт</a></h2>
+  			<span class="site-search">Поиск</span>
+  			<ul class="shopping-items">
+  				<li>Закладки</li>
+  				<li>Корзина</li>
+  			</ul>
+  			<button class="order-button">Оформить заказ</button>	
+  		</section>
+  		<section class="middle-menu-container">
+  			<h1 class="main-heading">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+  			<div class="middle-menu-contacts">
+  				<span class="middle-menu-phone">+7 (812) 555-05-55</span>
+  				<p class="middle-menu-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+  			</div>
+  		</section>
+  		<section class="login-container">
+  			<h2 class="visually-hidden">Форма входа в личный кабинет</h2>
+  			<button class="log-in-button">Войти</button>
+  			<button class="register-button">Регистрация</button>
+  		</section>
+  		<nav class="main-nav">
+  			<ul class="main-nav-list">
+  				<li><a href="index.html">Главная</a></li>
+  				<li><a href="about.html">Компания</a></li>
+  				<li><a href="catalog.html">Каталог</a></li>
+  				<li><a href="news.html">Новости</a></li>
+  				<li><a href="offers.html">Спецпредложения</a></li>
+  				<li><a href="delivery.html">Доставка</a></li>
+  				<li><a href="contacts.html">Контакты</a></li>
+  			</ul>
+  		</nav>
+  	</header>
+  	<main class="container">
+  		<section class="features">
+  			<h2 class="visually-hidden">Полезная информация</h2>
+  			<div class="feature-item materials">
+  				<b>Материалы</b>
+  				<span>На любой вкус</span>
+  			</div>
+  			<div class="feature-item tools">
+  				<b>Инструмент</b>
+  				<span>На все случаи</span>
+  			</div>
+  			<div class="feature-item machinery">
+  				<b>Техника</b>
+  				<span>Для стройки</span>
+  			</div>
+  			<div class="feature-item discounts">
+  				<b>Скидки 50%</b>
+  				<span>На 350 товаров</span>
+  			</div>
+  			<div class="feature-item delivery">
+  				<b>Доставка</b>
+  				<span>Бесплатно</span>
+  			</div>
+  			<div class="catalog-slider">
+  				<b>Дрели</b>
+  				<span>Соседям на радость!</span>
+  				<button class="catalog-slider-button">Открыть каталог</button>
+  			</div>
+  		</section>
+  		<section class="popular-items">
+  			<div class="popular-items-header">
+  				<h2>Популярные товары</h2>
+  				<button class="popular-items">Все популярные товары</button>
+  			</div>
+  			<ul class="items">
+  				<li class="item">
+  					<div>
+  						<img src="#" width="410" height="575" alt="BOSH BFG 9000">
+  						<h3>Перфоратор BOSH BFG 9000</h3>
+  						<span>32500 Р.</span>
+  						<span>25500 Р.</span>
+  					</div>
+  				</li>
+  				<li class="item">
+  					<div>
+  						<img src="#" width="410" height="575" alt="BOSH BFG 3000">
+  						<h3>Перфоратор BOSH BFG 3000</h3>
+  						<span>22500 Р.</span>
+  						<span>15500 Р.</span>
+  					</div>
+  				</li>
+  				<li class="item">
+  					<div>
+  						<img src="#" width="410" height="575" alt="BOSH BFG 6000">
+  						<h3>Перфоратор BOSH BFG 6000</h3>
+  						<span>30500 Р.</span>
+  						<span>25500 Р.</span>
+  					</div>
+  				</li>
+  				<li class="item">
+  					<div>
+  						<img src="#" width="410" height="575" alt="BOSH BFG 2000">
+  						<h3>Перфоратор BOSH BFG 2000</h3>
+  						<span>12000 Р.</span>
+  					</div>
+  				</li>
+  			</ul>
+  		</section>
+  		<section class="popular-manufacturers">
+  			<h2>Популярные производители</h2>
+  			<button class="popular-manufacturers">Все производители</button>
+  			<ul class="manufacturers">
+  				<li class="manufacture-item"><img src="#" alt="BOSH"></li>
+  				<li class="manufacture-item"><img src="#" alt="Makita"></li>
+  				<li class="manufacture-item"><img src="#" alt="DeWalt"></li>
+  				<li class="manufacture-item"><img src="#" alt="Interskol"></li>
+  				<li class="manufacture-item"><img src="#" alt="Hitachi"></li>
+  				<li class="manufacture-item"><img src="#" alt="LG"></li>
+  				<li class="manufacture-item"><img src="#" alt="AEG"></li>
+  				<li class="manufacture-item"><img src="#" alt="metabo"></li>
+  			</ul>
+  		</section>
+  		<section class="services">
+  			<h2 class="visually-hidden">Сервисы и доставка</h2>
+  			<section class="service">
+  				<h2>Сервисы</h2>
+  				<p>Хороший интернет-магазин от личается от плохого не только ценами!
+  				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
+  			</section>
+  		  	<section class="delivery">
+  				<h2>Доставка</h2>
+  				<p>
+  					Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! <br>
+  					Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+  				</p>
+  				<ul class="delivery-features">
+  					<li>Доставка</li>
+  					<li>Гарантия</li>
+  					<li>Кредит</li>
+  				</ul>
+  			</section>
+  		</section>
+  		<section class="information">
+  			<h2 class="visually-hidden">Информация</h2>
+  			<section class="about-company">
+  				<h2>Компания "Техномарт"</h2>
+  				<p>Настоящий мужской шоппинг начинается здесь! огромный выбор товаров для ремонта и
+  				строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+  				<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+  				Техномарт работает со многими транспортными компаниями:</p>
+  				<ul class="transportation-companies">
+  					<li class="transportation-companies-item">Деловые линии</li>
+  					<li class="transportation-companies-item">
+  						Автотрейдинг
+  					</li>
+  					<li class="transportation-companies-item">ЖелДорЭкспедиция</li>
+  				</ul>
+  				<button class="about-company-button">Подробнее о компании</button>
+  			</section>
+  			<section class="contacts">
+  				<h2>Контакты</h2>
+  				<p>Вы можете забрать товар сами, заехав в наш офис</p>
+  				<img src="map.jpg" alt="Карта">
+  				<button class="get-lost-button">Заблудились? Напишите нам!</button>
+  			</section>
+  		</section>
+  	</main>
+  	<footer>
+  		<nav class="footer-nav">
+  				<a class="logo">Техномарт</a>
+  				<ul class="footer-nav-top">
+  					<li><a href="about.html">Компания</a></li>
+  					<li><a href="news.html">Новости</a></li>
+  					<li><a href="catalog.html">Каталог</a></li>
+  					<li><a href="delivery.html">Доставка</a></li>
+  					<li><a href="contacts.html">Контакты</a></li>
+  				</ul>
+  				<p class="footer-contacts">
+  					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+  					+7 (812) 555-05-55
+  				</p>
+  				<ul class="footer-nav-bottom">
+  					<li><a href="catalog.html">Материалы</a></li>
+  					<li><a href="delivery.html">Техника</a></li>
+  					<li><a href="contacts.html">Инструмент</a></li>
+  					<li><a href="contacts.html">Спецпредложения</a></li>
+  				</ul>
+  		</nav>
+  		<section class="footer-bottom">
+  			<h2 class="visually-hidden">Правовая информация</h2>
+  			<p class="copyright">
+				2010-2017 Компания "Техномарт"
+  				Все права защищены
+  			</p>
+  			<div class="footer-social">
+  				<ul>
+  					<li><a href="#" class="social-button vk">Вконтакте</a></li>
+  					<li><a href="#" class="social-button fb">Фэйсбук</a></li>
+  					<li><a href="#" class="social-button igram">Инстаграм</a></li>
+  				</ul>
+  			</div>
+  			<table>
+  				<tr>
+  					<th>Обратная связь:</th>
+  					<th>Разработано -</th>
+  				</tr>
+  				<tr>
+  					<td><a href="#">mail@htmlacademy.ru</a></td>
+  					<td><a href="#">htmlacademy.ru</a></td>
+  				</tr>
+  			</table>
+  		</section>
+  	</footer>
+  	<section class="modal modal-contact-us">
+    	<h3>Ваше имя:</h3>
+      	<!-- Здесь будет форма -->
+      	<h3>Ваше e-mail:</h3>
+      	<!-- Здесь будет форма -->
+      	<h3>Текст письма:</h3>
+      	<!-- Здесь будет форма -->
+      	<button class="contact-us-button">
+      		Отправить
+      	</button>
+      	<span class="modal-close">x</span>
+    </section>
+    
+    <section class="modal modal-map">
+    	<h2 class="visually-hidden">Как до нас добраться</h2>
+    	<span class="modal-close">x</span>
+    </section>
   </body>
 </html>
