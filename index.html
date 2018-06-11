@@ -43,39 +43,46 @@
   <main class="container">
     <section class="features">
       <h2 class="visually-hidden">Полезная информация</h2>
-      <div class="feature-item materials">
-        <b>Материалы</b>
+      <section class="feature-item materials">
+        <h3>Материалы</h3>
         <a href="#">На любой вкус</a>
-      </div>
-      <div class="feature-item tools">
-        <b>Инструмент</b>
+      </section>
+      <section class="feature-item tools">
+        <h3>Инструмент</h3>
         <a href="#">На все случаи</a>
-      </div>
-      <div class="feature-item machinery">
-        <b>Техника</b>
+      </section>
+      <section class="feature-item machinery">
+        <h3>Техника</h3>
         <a href="#">Для стройки</a>
-      </div>
-      <div class="feature-item discounts">
-        <b>Скидки 50%</b>
+      </section>
+      <section class="feature-item discounts">
+        <h3>Скидки 50%</h3>
         <a href="#">На 350 товаров</a>
-      </div>
-      <div class="feature-item delivery">
-        <b>Доставка</b>
+      </section>
+      <section class="feature-item delivery">
+        <h3>Доставка</h3>
         <a href="#">Бесплатно</a>
-      </div>
-      <div class="catalog-slider">
-        <div class="catalog-slider-active">
-          <b>Дрели</b>
-          <span>Соседям на радость!</span>
-          <img src="img/drill-slider.jpg" width="620" height="266" alt="Дрели">
-        </div>
-        <div class="catalog-slider-hidden">
-          <b>Перфораторы</b>
-          <span>Настоящие мужские игрушки</span>
-          <img src="img/perforator-slider.jpg" width="620" height="266" alt="Перфораторы">
-        </div>
+      </section>
+      <section class="catalog-slider-active">
+        <h3>Дрели</h3>
+        <span>Соседям на радость!</span>
+<!--        
+        <img src="img/drill-slider.jpg" width="620" height="266" alt="Дрели">
+        --> 
         <a class="catalog-slider-button" href="catalog.html">Открыть каталог</a>
-      </div>
+        <button class="button-backward" type="button">Назад</button>
+        <button class="button-forward" type="button">Вперед</button>       
+      </section>
+      <secton class="catalog-slider-hidden">
+        <h3>Перфораторы</h3>
+        <span>Настоящие мужские игрушки</span>
+<!--
+        <img src="img/perforator-slider.jpg" width="620" height="266" alt="Перфораторы">
+      -->
+        <a class="catalog-slider-button" href="catalog.html">Открыть каталог</a>
+        <button class="button-backward" type="button">Назад</button>
+        <button class="button-forward" type="button">Вперед</button>  
+     </section>
     </section>
     <section class="popular-items">
       <div class="popular-items-header">
@@ -253,34 +260,40 @@
         Все права защищены
       </p>
       <ul class="footer-social">
-        <li><a href="#" class="social-button vk">Вконтакте</a></li>
-        <li><a href="#" class="social-button fb">Фэйсбук</a></li>
-        <li><a href="#" class="social-button instagram">Инстаграм</a></li>
+        <li><a href="#" class="social-button vk"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li><a href="#" class="social-button fb"><span class="visually-hidden">Фэйсбук</span></a></li>
+        <li><a href="#" class="social-button instagram"><span class="visually-hidden">Инстаграм</span></a></li>
       </ul>
-      <div class="feedback">
-        <b>Обратная связь:</b>
+      <section class="feedback">
+        <h3>Обратная связь:</h3>
         <a href="#">mail@htmlacademy.ru</a>
       </div>
-      <div class="developers-info">
-        <b>Разработано -</b>
+      <section class="developers-info">
+        <h3>Разработано -</h3>
         <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </div>
     </section>
   </footer>
   <section class="modal modal-contact-us">
-    <h3>Ваше имя:</h3>
-    <!-- Здесь будет форма -->
-    <h3>Ваше e-mail:</h3>
-    <!-- Здесь будет форма -->
-    <h3>Текст письма:</h3>
-    <!-- Здесь будет форма -->
-    <button class="contact-us-button">Отправить</button>
-    <span class="modal-close">x</span>
+    <form class="contact-form" method="post"
+          action="https://echo.htmlacademy.ru">
+      <label for="name-field">Ваше имя:
+        <input type="text" name="name" id="name-field">
+      </label>
+      <label for="e-mail-field">Ваше e-mail:
+        <input type="text" name="e-mail" id="e-mail-field">
+      </label>
+      <label for="text-field">Текст письма:
+        <textarea name="text" id="text-field" rows="4">В свободной форме</textarea>
+      </label>
+      <button class="contact-us-button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть карту проезда</span></button>
   </section>    
   <section class="modal modal-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <span class="modal-close">x</span>
-      <img src="img/big-map.jpg" alt="Карта проезда большая">      
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    <img src="img/big-map.jpg" width="1200" height="779" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">      
   </section>
 </body>
 </html>
