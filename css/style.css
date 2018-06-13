@@ -1,6 +1,4 @@
-
-
-//* Визуально скрытый элемент
+/* Визуально скрытый элемент
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -11,3 +9,46 @@
 	clip: rect(0 0 0 0);
 	overflow: hidden; 
 }
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+	background-color: #ffffff;
+	max-width: 960px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.top-menu {
+	background-color: #293449;
+}
+
+.logo {
+	font-size: 24px;
+	line-height: 24px;
+	color: #ffffff;
+	text-align: center;
+	max-width: 220px;
+	max-height: 47px;
+	background-color: #ee3643;
+	padding-left: 55px;
+	padding-right: 55px;
+	padding-top: 10px;
+	padding-bottom: 6px;
+	border-bottom: 5px solid #b52933; 
+}
+
+
+input[type="seacrh"] {
+	max-width: 270px
+}
+
