@@ -10,10 +10,10 @@
 <body>
   <header class="header">
     <section class="top-menu">
-      <h2><a class="logo">Техномарт</a></h2>
+      <h2><a class="logo" href="#">Техномарт</a></h2>
       <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
         <label for="search-field">
-          <input type="search" name="search" id="search-field" placeholder="Поиск">
+          <input type="search" name="search" id="search-field" placeholder="Поиск:">
         </label>
       </form>
       <ul class="shopping-items">
@@ -87,10 +87,10 @@
         <h3>Доставка</h3>
         <a href="#">Бесплатно</a>
       </section>
-      <section class="slider-active">
+      <section class="slider active">
         <h3>Дрели</h3>
         <span>Соседям на радость!</span>
-        <a class="slider-btn" href="catalog.html">Открыть каталог</a>
+        <a class="open-catalog btn" href="catalog.html">Открыть каталог</a>
         <button class="back-btn" type="button">Назад</button>
         <button class="fwrd-btn" type="button">Вперед</button>
         <ul class="slide-switches">
@@ -106,10 +106,10 @@
           </li>
         </ul>       
       </section>
-      <section class="slider-hidden">
+      <section class="slider hidden">
         <h3>Перфораторы</h3>
         <span>Настоящие мужские игрушки</span>
-        <a class="slider-btn" href="catalog.html">Открыть каталог</a>
+        <a class="open-catalog btn" href="catalog.html">Открыть каталог</a>
         <button class="back-btn" type="button">Назад</button>
         <button class="fwrd-btn" type="button">Вперед</button>
         <ul class="slide-switches">
@@ -127,9 +127,9 @@
      </section>
     </section>
     <section class="popular-items">
-      <div class="header">
-        <h2>Популярные товары</h2>
-        <a class="popular-items" href="#">Все популярные товары</a>
+      <div class="items-header">
+        <h2>Популярные товары:</h2>
+        <a href="#" class="items-btn btn">Все популярные товары</a>
       </div>
       <ul class="items">
         <li class="catalog-item">
@@ -185,46 +185,48 @@
         </li>
       </ul>
     </section>
-    <section class="popular-manufacturers">
-      <h2>Популярные производители</h2>
-      <a class="all-manufacturers" href="#">Все производители</a>
-      <ul class="manufacturers">
-        <li class="manufacture-item">
+    <section class="popular-brands">
+      <div class="brands-header">
+        <h2>Популярные производители</h2>
+        <a class="brands-btn btn" href="#">Все производители</a>
+        </div>
+      <ul class="brands">
+        <li class="brand-item">
           <a href="#">
             <img src="img/bosch-logo.jpg" alt="BOSCH">
           </a>
         </li>
-        <li class="manufacture-item">
+        <li class="brand-item">
           <a href="#">
             <img src="img/makita-logo.jpg" alt="Makita">
           </a>
         </li>
-        <li class="manufacture-item">
+        <li class="brand-item">
           <a href="#">
             <img src="img/dewalt-logo.jpg" alt="DeWalt">
           </a>
         </li>
-        <li class="manufacture-item">
+        <li class="brand-item">
           <a href="#">
             <img src="img/interscole-logo.jpg" alt="Interskol">
           </a>
         </li>
-        <li class="manufacture-item">
+        <li class="brand-item">
           <a href="#">
             <img src="img/hitachi-logo.jpg" alt="Hitachi">
           </a>
         </li>
-        <li class="manufacture-item">
+        <li class="brand-item">
           <a href="#">
             <img src="img/lg-logo.jpg" alt="LG">
           </a>
         </li>
-        <li class="manufacture-item">
+        <li class="brand-item">
           <a href="#">
             <img src="img/aeg-logo.jpg" alt="AEG">
           </a>
         </li>
-        <li class="manufacture-item">
+        <li class="brand-item">
           <a href="#">
             <img src="img/metabo-logo.jpg" alt="metabo">
           </a>
@@ -240,8 +242,9 @@
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными
         </p>
       </section>
-      <ul class="advantages-list">
-          <li class="item-active">
+      <section class="delivery-active">
+        <ul class="advantages-list">
+          <li class="active-item">
             <a href="#">Доставка</a>
           </li>
           <li>
@@ -250,8 +253,7 @@
           <li>
             <a href="#">Кредит</a>
           </li>
-      </ul>
-      <section class="delivery-active">
+        </ul>
         <h2>Доставка</h2>
         <p>
           Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! <br>
@@ -259,6 +261,17 @@
         </p>
       </section>
       <section class="garantee">
+        <ul class="advantages-list">
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li class="active-item">
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Кредит</a>
+          </li>
+        </ul>
         <h2>Гарантия</h2>
         <p>
           Если купленный у нас товар поломается или заискрит,
@@ -269,12 +282,23 @@
         </p>
       </section>
       <section class="credit">
+        <ul class="advantages-list">
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li class="active-item">
+            <a href="#">Кредит</a>
+          </li>
+        </ul>
         <h2>Кредит</h2>
         <p>
           Залезть в долговую яму стало проще!<br>
           Кредитные консультанты придут вам на помощь.
         </p>
-        <a class="credit-request" href="#">Подать заявку</a>
+        <a class="credit-btn btn" href="#">Отправить заявку</a>
       </section>
     </section>
     <section class="information">
@@ -290,18 +314,18 @@
           Техномарт работает со многими транспортными компаниями:
         </p>
         <ul class="transportation-companies">
-          <li class="transportation-item">Деловые линии</li>
-          <li class="transportation-item">Автотрейдинг</li>
-          <li class="transportation-item">ЖелДорЭкспедиция</li>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a class="company-btn" href="#">Подробнее о компании</a>
+        <a class="company-btn btn" href="#">Подробнее о компании</a>
       </section>
-    </section>
-    <section class="contacts">
-      <h2>Контакты</h2>
-      <p>Вы можете забрать товар сами, заехав в наш офис</p>
-      <img src="img/small-map.png" alt="Карта">
-      <a class="get-lost-button" href="#">Заблудились? Напишите нам!</a>
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис</p>
+        <img src="img/small-map.png" alt="Карта">
+        <a class="lost-btn btn" href="#">Заблудились? Напишите нам!</a>
+      </section>
     </section>
   </main>
   <footer class="footer">
@@ -389,7 +413,7 @@
       <label for="text-field">Текст письма:
         <textarea name="text" id="text-field" rows="4">В свободной форме</textarea>
       </label>
-      <button class="contact-us-btn" type="submit">Отправить</button>
+      <button class="contact-us btn" type="submit">Отправить</button>
     </form>
     <button class="modal-close" type="button">
       <span class="visually-hidden">Закрыть карту проезда</span>
