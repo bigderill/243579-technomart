@@ -127,7 +127,6 @@ h1 {
 .adress {
 	font-size: 14px;
 	line-height: 24px;
-	text-align: center;
 	color: #32425c;
 }
 
@@ -355,6 +354,11 @@ h1 {
 	background-color: #32425c;
 }
 
+.advantages-list a:hover {
+	color: #ffffff;
+	background-color: #293449;
+}
+
 .active-item a {
 	color: #32425c;
 	background-color: #ffffff;
@@ -415,8 +419,19 @@ h1 {
 	line-height: 24px;		
 }
 
+.footer-nav-top a:hover,
+.footer-nav-bottom a:hover,
+.footer-nav-top a:focus,
+.footer-nav-bottom a:focus {
+	text-decoration: underline;
+}
+
 .footer-nav-top a {
 	color: #ffffff;
+}
+
+.footer-nav-top a:active {
+	opacity: 0.5;
 }
 .footer-contacts {
 	font-size: 18px;
@@ -426,6 +441,10 @@ h1 {
 
 .footer-nav-bottom a {
 	color: #ffd180;
+}
+
+.footer-nav-bottom a:active {
+	opacity: 0.5;
 }
 
 .footer-bottom {
@@ -443,6 +462,35 @@ h1 {
 	list-style: none;
 }
 
+.social-btn {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: #212a3a;    
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+    border: 1px solid #212a3a;
+    border-radius: 50%;
+}
+
+.vk {
+	background-image: url(../img/icon-vk.svg);
+}
+
+.fb {
+	background-image: url(../img/icon-fb.svg);
+}
+
+.instagram {
+	background-image: url(../img/icon-insta.svg);
+}
+
+.social-btn:hover,
+.social-btn:focus,
+.social-btn:active {
+	background-color: #ee3643;
+}
 .feedback h3, 
 .developers h3 {
 	font-size: 16px;
@@ -457,12 +505,39 @@ h1 {
 	color: #ffd180;
 }
 
+.feedback a:hover,
+.feedback a:focus, 
+.developers a:hover,
+.developers a:focus {
+	text-decoration: underline;
+}
+
+.feedback a:active, 
+.developers a:active {
+	color: #ee3643;
+} 
+
 .contact-form {
 	font-size: 18px;
 	line-height: 18px;
 	color: #000000;
 }
 
+.contact-form input[type="text"],
+.contact-form textarea[name="text"] {
+	outline: 2px solid #d7dcde;
+}
+
+
+.contact-form input[type="text"]:focus,
+.contact-form textarea[name="text"]:focus {
+	outline: 2px solid #ee3643;
+}
+
+.contact-form input[type="text"]:hover,
+.contact-form textarea[name="text"]:hover {
+	outline: 2px solid #b5b5b5;
+}
 /* Элементы каталога */
 .account-btn {
 	font-size: 21px;
@@ -536,6 +611,10 @@ h1 {
 
 .filter ul {
 	list-style: none;
+}
+
+.power-supply input[disabled] {
+	color: rgba(181, 181, 181, 0.4);
 }
 
 .btn-show {
