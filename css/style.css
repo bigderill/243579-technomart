@@ -221,10 +221,6 @@ h1 {
 	color: #ffffff;
 }
 
-.features {
-	display: flex;
-}
-
 .feature-item h3 {
 	font-size: 24px;
 	font-weight: bold;
@@ -240,9 +236,10 @@ h1 {
 }
 
 .feature-item {
-	min-width: 300px;
+	width: 300px;
 	min-height: 123px;
 	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
 .materials {
@@ -278,20 +275,32 @@ h1 {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
+.slider {
+	box-sizing: border-box; 
+	width: 620px;
+	height: 266px;
+	background-image: url(../img/drill-slider.jpg);
+	mar
+
+}
+
 .slider h3 {
+	margin: 0;
+	padding: 10px;
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: bold;
 	color: #ffffff;	
-	background-color: #160e0b;
+	background-color: transparent;
 	text-transform: uppercase;
 }
 
 .slider span {
+	padding: 10px;
 	font-size: 18px;
 	line-height: 24px;
 	color: #ffffff;
-	background-color: #160e0b;
+	background-color: transparent;
 }
 
 .slide-switches {
@@ -314,9 +323,26 @@ h1 {
 	background-color: #ba2732;
 }
 
+
+.features {
+	display: flex;
+	margin-top: 60px;
+	margin-bottom: 55px;
+}
+
+.items-wrapper {
+	display: flex;
+}
+
+.container-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
 .items-header,
 .brands-header {
 	display: flex;
+	justify-content: space-between;
 	background-color: #f9f5f0;
 }
 
