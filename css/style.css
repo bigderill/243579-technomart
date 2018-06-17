@@ -12,6 +12,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	min-width: 1200px;
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
@@ -20,8 +21,27 @@ body {
 	background-color: #ffffff;
 }
 
+.container {
+  	width: 940px;
+  	margin: 0 auto;
+  	padding: 0 10px;
+}
+
 a {
 	text-decoration: none;
+}
+
+.top-menu {
+	background-color: #293449;
+	min-height: 42px;
+}
+
+.top-menu .container {
+	display: flex; 
+	align-items: baseline;
+  	width: 940px;
+  	margin: 0 auto;
+  	padding: 0 10px;
 }
 
 .logo {
@@ -30,6 +50,9 @@ a {
 	color: #ffffff;
 	background-color: #ee3643;
 	text-transform: uppercase;
+	width: 220px;
+	padding: 13px 55px;
+	margin-right: 10px;
 }
 
 .logo:hover,
@@ -46,6 +69,9 @@ a {
 	line-height: 18px;
 	color: #ffffff;
 	background-color: #293449;
+	width: 230px;
+	vertical-align: middle;
+	border: transparent;
 }
 
 
@@ -67,8 +93,8 @@ a {
 }
 
 
-
 .shopping-items {
+	display: flex;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -85,11 +111,17 @@ a {
 	background-color: #161d29;
 }
 
+.shopping-item {
+	width: 150px;
+	margin-right: 10px;
+}
+
 .order-btn {
 	font-size: 17px;
 	line-height: 18px;
 	color: #ffffff;
 	background-color: #63a63e;
+	padding: 11px 20px;
 }
 
 .order-btn:hover,
@@ -105,12 +137,17 @@ a {
 	background-color: #f3f7f8;
 }
 
+.middle-menu .container {
+	display: flex;
+}
+
 h1 {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 23px;
 	font-style: italic;
 	color: #ee3643;
+	width: 200px;
 }
 
 .contacts {
@@ -122,6 +159,8 @@ h1 {
 	line-height: 21px;
 	text-align: center;
 	color: #ee3643;
+	width: 270px;
+	height: 45px;
 }
 
 .adress {
@@ -157,13 +196,17 @@ h1 {
 }
 
 .nav-list {
+	display: flex;
 	list-style: none;
 	background-color: #32425c;
+	margin: 0 auto;
+	margin-bottom: 60px;
 }
 
 .nav-item {
 	font-size: 17px;
 	line-height: 17px;
+	margin-right: 10px;
 }
 
 .nav-item:hover,
@@ -178,6 +221,10 @@ h1 {
 	color: #ffffff;
 }
 
+.features {
+	display: flex;
+}
+
 .feature-item h3 {
 	font-size: 24px;
 	font-weight: bold;
@@ -190,6 +237,12 @@ h1 {
 	line-height: 18px;
 	color: #ffffff;
 	text-transform: uppercase;
+}
+
+.feature-item {
+	min-width: 300px;
+	min-height: 123px;
+	margin-right: 20px;
 }
 
 .materials {
@@ -261,12 +314,17 @@ h1 {
 	background-color: #ba2732;
 }
 
+.items-header,
+.brands-header {
+	display: flex;
+	background-color: #f9f5f0;
+}
+
 .items-header h2,
 .brands-header h2 {
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
-	background-color: #f9f5f0;
 }
 
 .items-header a,
@@ -278,6 +336,7 @@ h1 {
 }
 
 .items {
+	display: flex;
 	list-style: none;
 }
 
@@ -308,6 +367,7 @@ h1 {
 }
 
 .brands {
+	display: flex;
 	list-style: none;
 
 }
@@ -364,6 +424,12 @@ h1 {
 	background-color: #ffffff;
 }
 
+.delivery-active,
+.garantee,
+.credit {
+	display: flex;
+}
+
 .delivery-active h2,
 .garantee h2,
 .credit h2 {
@@ -387,6 +453,10 @@ h1 {
 
 }
 
+.information {
+	display: flex;
+}
+
 .information p,
 .perforators-about p {
 	font-family: "PT Sans", Arial, sans-serif;
@@ -408,9 +478,14 @@ h1 {
 	background-color: #32425c;
 }
 
+.footer-nav .container {
+	display: flex;
+}
+
 .footer-nav-top,
 .footer-nav-bottom {
 	list-style: none;
+	display: flex; 
 }
 
 .footer-nav-top a,
@@ -449,7 +524,6 @@ h1 {
 
 .footer-bottom {
 	background-color: #293449;
-
 }
 
 .copyright {
@@ -458,7 +532,12 @@ h1 {
 	color: #ffffff;
 }
 
+.footer-bottom .container {
+	display: flex;
+}
+
 .footer-social {
+	display: flex;
 	list-style: none;
 }
 
