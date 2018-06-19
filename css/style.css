@@ -33,26 +33,35 @@ a {
 
 .top-menu {
 	background-color: #293449;
-	min-height: 42px;
+	height: 42px;
 }
 
 .top-menu .container {
 	display: flex; 
-	align-items: baseline;
   	width: 940px;
   	margin: 0 auto;
   	padding: 0 10px;
 }
 
-.logo {
+.top-menu h2 {
+	margin: 0;
+	width: 220px;
+	min-height: 42px;
+	background-color: #ee3643;
+	border-bottom: 5px solid #b52933;
+}
+
+
+.top-menu .logo {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
 	font-size: 24px;
+	font-weight: normal;
 	line-height: 24px;
 	color: #ffffff;
-	background-color: #ee3643;
 	text-transform: uppercase;
-	width: 220px;
-	padding: 13px 55px;
-	margin-right: 10px;
+	padding: 12px 55px 6px 56px;
 }
 
 .logo:hover,
@@ -117,11 +126,13 @@ a {
 }
 
 .order-btn {
+	padding: 0;
+	margin: 0;
 	font-size: 17px;
 	line-height: 18px;
 	color: #ffffff;
 	background-color: #63a63e;
-	padding: 11px 20px;
+	
 }
 
 .order-btn:hover,
