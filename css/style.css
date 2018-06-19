@@ -37,10 +37,12 @@ a {
 }
 
 .top-menu .container {
-	display: flex; 
+	display: flex;
+	flex-wrap: wrap;
   	width: 940px;
   	margin: 0 auto;
   	padding: 0 10px;
+
 }
 
 .top-menu h2 {
