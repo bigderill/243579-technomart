@@ -14,27 +14,29 @@
         <h2><a class="logo" href="#">Техномарт</a></h2>
         <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
           <label for="search-field">
-            <input type="search" name="search" id="search-field" placeholder="Поиск:">
+            <input type="search" name="search" id="search-field" placeholder="Поиск:" class="find">
           </label>
+          <button class="search-btn" type="submit"></button> 
         </form>
         <ul class="shopping-items">
           <li class="shopping-item">
-            <a href="#">Закладки</a>
+            <a class="bookmark" href="#">Закладки: 0</a>
           </li>
           <li class="shopping-item">
-            <a href="#">Корзина: 0</a>
+            <a class="cart" href="#">Корзина: 0</a>
           </li>
         </ul>
-        <a class="order-btn" href="#">Оформить заказ</a>
+          <a class="order-btn" href="#">Оформить заказ</a>
       </div>	
     </section>
     <section class="middle-menu">
       <div class="container">
-        <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-        <div class="contacts">
+        <h1>Интернет-магазин строительных материалов <br>и инструментов для ремонта</h1>
+        <section class="contacts">
+          <h2 class="visually-hidden">Контактная информация</h2>
           <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        </div>
-        <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </section>
         <section class="log-in">
           <h2 class="visually-hidden">Форма входа в личный кабинет</h2>
           <a class="log-in-btn" href="#">Войти</a>
