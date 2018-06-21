@@ -11,39 +11,41 @@
   <header class="header">
     <section class="top-menu">
       <div class="container">
-        <h2><a class="logo" href="index.html">Техномарт</a></h2>
+        <h2><a class="logo" href="#">Техномарт</a></h2>
         <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
           <label for="search-field">
-            <input type="search" name="search" id="search-field" placeholder="Поиск:">
+            <input type="search" name="search" id="search-field" placeholder="Поиск:" class="find">
           </label>
+          <button class="search-btn" type="submit"></button> 
         </form>
         <ul class="shopping-items">
           <li class="shopping-item">
-            <a href="#">Закладки</a>
+            <a class="bookmark" href="#">Закладки: 0</a>
           </li>
           <li class="shopping-item">
-            <a href="#">Корзина:10</a>
+            <a class="cart" href="#">Корзина: 10</a>
           </li>
         </ul>
-        <a class="order-btn" href="#">Оформить заказ</a>
+          <a class="order-btn" href="#">Оформить заказ</a>
       </div>  	
     </section>
     <section class="middle-menu">
       <div class="container">
-        <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-        <div class="contacts">
+        <h1>Интернет-магазин строительных материалов <br>и инструментов для ремонта</h1>
+        <section class="contacts">
+          <h2 class="visually-hidden">Контактная информация</h2>
           <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        </div>
-        <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </section>
         <section class="log-in">
           <h2 class="visually-hidden">Личный кабинет</h2>
           <a class="account-btn">Равшан Джамшутович</a>
           <ul class="account">
             <li>
-              <a href="">Мои заказы</a>
+              <a href="#">Мои заказы</a>
             </li>
             <li>
-              <a href="">Личный кабинет</a>
+              <a href="#">Личный кабинет</a>
             </li>
           </ul>
         </section>
@@ -80,12 +82,12 @@
   <main class="container">
     <ul class="catalog-nav">
       <li>
-        <a href="#">Каталог</a>
+        <a href="#" class="catalog-page">Каталог</a>
       </li>
       <li>
-        <a href="#">Инструмент</a>
+        <a href="#" class="tools-">Инструмент</a>
       </li>
-      <li class="page-active"><a href="">Перфораторы</a></li>
+      <li class="page-active"><a href="#" class="perforators-page">Перфораторы</a></li>
     </ul> 
     <section class="perforators">
       <h2>Перфораторы</h2>
@@ -313,10 +315,16 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
-      <nav class="footer-nav">
-        <div class="container">
-          <a class="logo">Техномарт</a>
+    <nav class="footer-nav">
+      <div class="container">
+        <div class="footer-contacts">
+          <a class="logo" href="#">Техномарт</a>
+          <p>
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            +7 (812) 555-05-55
+          </p>
+        </div>
+        <div class="footer-navigation"> 
           <ul class="footer-nav-top">
             <li>
               <a href="about.html">Компания</a>
@@ -334,12 +342,6 @@
               <a href="contacts.html">Контакты</a>
             </li>
           </ul>
-        </div>
-        <div class="container">
-          <p class="footer-contacts">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            +7 (812) 555-05-55
-          </p>
           <ul class="footer-nav-bottom">
             <li>
               <a href="catalog.html">Материалы</a>
@@ -353,45 +355,45 @@
             <li>
               <a href="contacts.html">Спецпредложения</a>
             </li>
-          </ul>
-        </div>
-      </nav>
-      <section class="footer-bottom">
-        <div class="container">
-          <h2 class="visually-hidden">Правовая информация</h2>
-          <p class="copyright">
-            2010-2017 Компания "Техномарт"<br>
-            Все права защищены
-          </p>
-          <ul class="footer-social">
-            <li>
-              <a href="#" class="social-btn vk">
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="social-btn fb">
-                <span class="visually-hidden">Фэйсбук</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="social-btn instagram">
-                <span class="visually-hidden">Инстаграм</span>
+          </ul>  
+        </div>             
+      </div>
+    </nav>
+    <section class="footer-bottom">
+      <div class="container">
+        <h2 class="visually-hidden">Правовая информация</h2>
+        <p class="copyright">
+          © 2010-2017 Компания «Техномарт»<br>
+          Все права защищены
+        </p>
+        <ul class="footer-social">
+          <li>
+            <a href="#" class="social-btn vk">
+              <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
-          </ul>
-          <section class="feedback">
-            <h3>Обратная связь:</h3>
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </section>
-          <section class="developers">
-            <h3>Разработано -</h3>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-          </section>
-        </div>
-      </section>
-    </div>
-  </footer>	
+          <li>
+            <a href="#" class="social-btn fb">
+              <span class="visually-hidden">Фэйсбук</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-btn instagram">
+              <span class="visually-hidden">Инстаграм</span>
+          </a>
+          </li>
+        </ul>
+        <section class="feedback">
+          <h3>Обратная связь:</h3>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </section>
+        <section class="developers">
+          <h3>Разработано -</h3>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        </section>
+      </div>
+    </section>
+  </footer>
   <section class="modal modal-cart">
     <h2 class="item-added">Товар добавлен в корзину</h2>
     <a class="checkout btn">Оформить заказ</a>

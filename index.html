@@ -374,10 +374,16 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
-      <nav class="footer-nav">
-        <div class="container">
-          <a class="logo">Техномарт</a>
+    <nav class="footer-nav">
+      <div class="container">
+        <div class="footer-contacts">
+          <a class="logo" href="#">Техномарт</a>
+          <p>
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            +7 (812) 555-05-55
+          </p>
+        </div>
+        <div class="footer-navigation"> 
           <ul class="footer-nav-top">
             <li>
               <a href="about.html">Компания</a>
@@ -395,12 +401,6 @@
               <a href="contacts.html">Контакты</a>
             </li>
           </ul>
-        </div>
-        <div class="container">
-          <p class="footer-contacts">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            +7 (812) 555-05-55
-          </p>
           <ul class="footer-nav-bottom">
             <li>
               <a href="catalog.html">Материалы</a>
@@ -414,46 +414,46 @@
             <li>
               <a href="contacts.html">Спецпредложения</a>
             </li>
-          </ul>
-        </div>
-      </nav>
-      <section class="footer-bottom">
-        <div class="container">
-          <h2 class="visually-hidden">Правовая информация</h2>
-          <p class="copyright">
-            2010-2017 Компания "Техномарт"<br>
-            Все права защищены
-          </p>
-          <ul class="footer-social">
-            <li>
-              <a href="#" class="social-btn vk">
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="social-btn fb">
-                <span class="visually-hidden">Фэйсбук</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="social-btn instagram">
-                <span class="visually-hidden">Инстаграм</span>
+          </ul>  
+        </div>             
+      </div>
+    </nav>
+    <section class="footer-bottom">
+      <div class="container">
+        <h2 class="visually-hidden">Правовая информация</h2>
+        <p class="copyright">
+          © 2010-2017 Компания «Техномарт»<br>
+          Все права защищены
+        </p>
+        <ul class="footer-social">
+          <li>
+            <a href="#" class="social-btn vk">
+              <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
-          </ul>
-          <section class="feedback">
-            <h3>Обратная связь:</h3>
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </section>
-          <section class="developers">
-            <h3>Разработано -</h3>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-          </section>
-        </div>
-      </section>
-    </div>
+          <li>
+            <a href="#" class="social-btn fb">
+              <span class="visually-hidden">Фэйсбук</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-btn instagram">
+              <span class="visually-hidden">Инстаграм</span>
+          </a>
+          </li>
+        </ul>
+        <section class="feedback">
+          <h3>Обратная связь:</h3>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </section>
+        <section class="developers">
+          <h3>Разработано -</h3>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        </section>
+      </div>
+    </section>
   </footer>
-  <section class="modal modal-contact-us">
+  <section class="modal modal-contact-us visually-hidden">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="contact-form" method="post"
           action="https://echo.htmlacademy.ru">
@@ -472,7 +472,7 @@
       <span class="visually-hidden">Закрыть карту проезда</span>
     </button>
   </section>    
-  <section class="modal modal-map">
+  <section class="modal modal-map visually-hidden">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <button class="modal-close" type="button">
       <span class="visually-hidden">Закрыть</span>

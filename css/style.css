@@ -256,7 +256,7 @@ img {
 
 .middle-menu .container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 
 }
 
@@ -273,13 +273,11 @@ h1 {
 	max-width: 200px;
 	margin-left: 55px;
 	margin-right: 60px;
-
 }
 
 .contacts {
 	display: flex;
 	flex-direction: column;
-	margin-right: 70px;
 }
 
 .phone {
@@ -320,6 +318,7 @@ h1 {
 
 .log-in {
 	display: flex;
+	margin-left: 70px;
 }
 
 .log-in-btn {
@@ -1007,6 +1006,9 @@ h1 {
 	background-color: #ff5357;
 }
 
+/*---------Информация---------*/
+
+
 .information h2,
 .perforators-about h2 {
 	font-size: 30px;
@@ -1014,7 +1016,6 @@ h1 {
 	font-weight: normal;
 	line-height: 30px;
 	color: #000000;
-
 }
 
 .information .container {
@@ -1070,25 +1071,88 @@ h1 {
 	margin-right: 0;
 }
 
+/*------------ФУТЕР---------------*/
+.footer {
+	margin-top: 88px;
+}
+
 .footer-nav {
 	background-color: #32425c;
+	padding-bottom: 31px;
 }
 
 .footer-nav .container {
 	display: flex;
+	justify-content: space-between;
 }
+
+.footer-contacts {
+	margin-right: 5px;
+}
+
+.footer .logo {
+	display: block;	
+	box-sizing: border-box;
+	width: 220px;
+	height: 68px;
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 30px;
+	color: #ffffff;
+	background-color: #ee3643;
+	border-bottom: 5px solid #b52933;
+	text-transform: uppercase;
+	padding: 16px 42px;
+}
+
+.footer-contacts p {
+	padding-left: 5px;
+	padding-top: 10px; 
+}
+
+.footer-navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 550px;
+}
+
 
 .footer-nav-top,
 .footer-nav-bottom {
-	list-style: none;
 	display: flex; 
+	justify-content: flex-end;
+	align-content: stretch;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-.footer-nav-top a,
-.footer-nav-bottom a {
-	font-size: 18px;
-	line-height: 24px;		
+.footer-nav-top li,
+.footer-nav-bottom li {
+	margin: 0;
+	padding: 0;
+	margin-left: 30px;
 }
+
+.footer-navigation a {
+	display: block;
+	box-sizing: border-box;
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;	
+}
+
+.footer-nav-top a {
+	padding-left: 29px;
+	padding-bottom: 20px;
+}
+
+.footer-nav-bottom a {
+	padding-left: 30px;
+	padding-top: 14px;
+}
+
 
 .footer-nav-top a:hover,
 .footer-nav-bottom a:hover,
@@ -1097,9 +1161,6 @@ h1 {
 	text-decoration: underline;
 }
 
-.footer-nav-top a {
-	color: #ffffff;
-}
 
 .footer-nav-top a:active {
 	opacity: 0.5;
@@ -1120,28 +1181,36 @@ h1 {
 
 .footer-bottom {
 	background-color: #293449;
+	min-height: 109px;
+}
+
+.footer-bottom .container {
+	display: flex;
+	justify-content: space-between;
 }
 
 .copyright {
 	font-size: 16px;
 	line-height: 18px;
+	font-weight: normal;
 	color: #ffffff;
-}
-
-.footer-bottom .container {
-	display: flex;
+	padding-top: 22px;
+	padding-left: 3px;
+	margin-right: 64px;
 }
 
 .footer-social {
 	display: flex;
 	list-style: none;
+	justify-content: center;	
+	padding-top: 21px;
 }
 
 .social-btn {
     display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+    width: 38px;
+    height: 38px;
+    margin-right: 4px;
     background-color: #212a3a;    
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
@@ -1166,18 +1235,34 @@ h1 {
 .social-btn:active {
 	background-color: #ee3643;
 }
+
+.feedback {
+	margin-left: 40px;
+}
+
+.developers {
+	margin-left: 30px;
+}
+
 .feedback h3, 
 .developers h3 {
+	display: block;
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
+	margin-top: 37px;
+	margin-left: 30px;
+	margin-bottom: 0px;
+	padding: 0;
 }
 
 .feedback a, 
 .developers a {
+	display: block;
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffd180;
+	margin-left: 30px;
 }
 
 .feedback a:hover,
@@ -1192,6 +1277,8 @@ h1 {
 	color: #ee3643;
 } 
 
+
+/*-----Модальные окна-----------*/
 .contact-form {
 	font-size: 18px;
 	line-height: 18px;
@@ -1213,7 +1300,10 @@ h1 {
 .contact-form textarea[name="text"]:hover {
 	outline: 2px solid #b5b5b5;
 }
+
+
 /* Элементы каталога */
+
 .account-btn {
 	font-size: 21px;
 	line-height: 21px;
@@ -1247,15 +1337,30 @@ h1 {
 
 
 .catalog-nav {
+	display: flex;
+	position: relative;
 	list-style: none;
+	margin-left: 13px;
 }
 
 .catalog-nav a {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
+	font-weight: normal;
 	color: #000000;
 	text-transform: uppercase;
+	margin-right: 41px;
+}
+
+.catalog-page::before {
+	content: "";
+	position: absolute;
+	left: -15px;
+	top: 7px;
+	width: 14px;
+	height: 12px;
+	background: url(../img/icon-home.svg) no-repeat 0 0;
 }
 
 .perforators {
