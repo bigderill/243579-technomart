@@ -13,10 +13,8 @@
       <div class="container">
         <h2><a class="logo" href="#">Техномарт</a></h2>
         <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
-          <label for="search-field">
-            <input type="search" name="search" id="search-field" placeholder="Поиск:" class="find">
-          </label>
-          <button class="search-btn" type="submit"></button> 
+          <input type="search" name="search" id="search-field" placeholder="Поиск:" class="find">
+          <label for="search-field" class="search-field"></label>
         </form>
         <ul class="shopping-items">
           <li class="shopping-item">
@@ -27,7 +25,7 @@
           </li>
         </ul>
           <a class="order-btn" href="#">Оформить заказ</a>
-      </div>	
+      </div>  
     </section>
     <section class="middle-menu">
       <div class="container">
@@ -90,33 +88,49 @@
               <a href="#">На все случаи</a>
             </section>          
           </div>
-          <section class="slider">
-            <input type="radio" id="radio-btn-1" name="toggle" checked>
-            <input type="radio" id="radio-btn-2" name="toggle">
-            <div class="slider-controls">
-              <label for="radio-btn-1"></label>
-              <label for="radio-btn-2"></label>
-            </div>
-            <label class="arrow-left" for="radio-btn-1"></label>
-            <label class="arrow-right" for="radio-btn-2"></label>
-            <div class="slides">
-              <div class="slide">
-                <div class="slide-text">
-                  <h2 class="slide-title">Перфораторы</h2>
-                  <span>Настоящие мужские игрушки</span>
-                  <a href="catalog.html" class="btn">Открыть каталог</a>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="slide-text">
-                  <h2 class="slide-title">Дрели</h2>
-                  <span>Соседям на радость!</span>
-                  <a href="catalog.html" class="btn">Открыть каталог</a>
-                </div>
-              </div>
-            </div>
+          <section class="slider active">
+            <h3>Дрели</h3>
+            <span>Соседям на радость!</span>
+            <a class="open-catalog btn" href="catalog.html">Открыть каталог</a>
+            <button class="back-btn" type="button">
+              <span class="visually-hidden">Назад</span>
+            </button>
+            <button class="fwrd-btn" type="button">
+              <span class="visually-hidden">Вперед</span>
+            </button>
+            <ul class="slide-switches">
+              <li class="slide-radio">
+                <button type="button" class="slide-btn-active">
+                  <span class="visually-hidden">Первый слайд</span>
+                </button>
+              </li>
+              <li class="slide-radio">
+                <button type="button" class="slide-btn-empty">
+                  <span class="visually-hidden">Второй слайд</span>
+                </button>
+              </li>
+            </ul>       
           </section>
-        </div>
+          <section class="slider visually-hidden">
+            <h3>Перфораторы</h3>
+            <span>Настоящие мужские игрушки</span>
+            <a class="open-catalog btn" href="catalog.html">Открыть каталог</a>
+            <button class="back-btn" type="button">Назад</button>
+            <button class="fwrd-btn" type="button">Вперед</button>
+            <ul class="slide-switches">
+              <li class="slide-radio">
+                <button type="button" class="slide-btn">
+                  Первый слайд
+                </button>
+              </li>
+              <li class="slide-radio">
+                <button type="button" class="slide-btn">
+                  Второй слайд
+                </button>
+              </li>
+            </ul>  
+          </section>
+        </div>        
         <div class="container-wrapper">
           <section class="feature-item machinery">
             <h3>Техника</h3>
