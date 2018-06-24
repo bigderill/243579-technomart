@@ -435,31 +435,83 @@
       </div>
     </section>
   </footer>
-  <section class="modal modal-contact-us visually-hidden">
+  <section class="modal-write-us visually-hidden">
     <h2 class="visually-hidden">Форма обратной связи</h2>
+    <div>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть форму обратной связи</span>
+      </button>
+    </div>
     <form class="contact-form" method="post"
           action="https://echo.htmlacademy.ru">
-      <label for="name-field">Ваше имя:
-        <input type="text" name="name" id="name-field">
-      </label>
-      <label for="e-mail-field">Ваше e-mail:
-        <input type="text" name="e-mail" id="e-mail-field">
-      </label>
-      <label for="text-field">Текст письма:
-        <textarea name="text" id="text-field" rows="4">В свободной форме</textarea>
-      </label>
-      <button class="contact-us btn" type="submit">Отправить</button>
+      <div class="form-answer">
+        <label for="name-field">
+          <span>Ваше имя:</span>
+          <br>
+          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" 
+          onfocus="placeholder='';" 
+          onblur="placeholder='Имя Фамилия';">
+        </label>
+        <label for="e-mail-field">
+          <span>Ваш e-mail:</span>
+          <br>
+          <input type="e-mail" name="e-mail" id="e-mail-field" placeholder="e-mail@example.com" 
+          onfocus="placeholder='';" 
+          onblur="placeholder='e-mail@example.com';">
+        </label>
+        <label for="e-mail-field">
+          <span>Текст письма:</span>
+          <br>  
+          <textarea name="text" id="text-field" cols="61" rows="6" placeholder="В свободной форме" 
+          onfocus="placeholder='';" 
+          onblur="placeholder='В свободной форме';">В свободной форме</textarea>
+        </label>
+      </div>
+      <div class="form-btn">
+        <button class="btn" type="submit">Отправить</button>
+      </div>
     </form>
-    <button class="modal-close" type="button">
-      <span class="visually-hidden">Закрыть карту проезда</span>
-    </button>
   </section>    
-  <section class="modal modal-map visually-hidden">
+  <section class="modal-map modal-show-map visually-hidden">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <button class="modal-close" type="button">
-      <span class="visually-hidden">Закрыть</span>
+      <span class="visually-hidden">Закрыть карту</span>
     </button>
-    <img src="img/big-map.jpg" width="1200" height="779" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d594.1898431367896!2d30.32281709519088!3d59.938639343398236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1460921418112"
+    width="940" height="448" frameborder="0" style="border: 0" allowfullscreen>
+      #document
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <style type="text/css">
+            html, body, #mapDiv {
+              height: 100%;
+              margin: 0;
+              padding: 0;
+            }
+          </style>
+          <script src="https://maps.googleapis.com/maps/api/js?client=google-maps-embed&paint_origin=&libraries=geometry,search&v=3.exp&language=ru_RU&region=ru"></script>
+          <script src="https://maps.gstatic.com/maps-api-v3/embed/js/33/4/intl/ru_ALL/init_embed.js"></script>
+          <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/33/4/intl/ru_ALL/common.js"></script>
+          <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/33/4/intl/ru_ALL/util.js"></script>
+          <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/33/4/intl/ru_ALL/stats.js"></script>
+        </head>
+        <body style="overflow: hidden;">
+          <div id="mapDiv"></div>
+        </body>
+        </html>
+    </iframe>
+  </section>
+  <section class="modal-add-product modal-content-show visually-hidden">
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть окно</span>
+    </button>
+    <span class="icon"></span>
+    <span>Товар добавлен в корзину!</span>
+    <div class="actions-block">
+      <a class="btn btn-checkout" href="#ordering">Оформить заказ</a>
+      <a class="btn btn-continue" href="#">Продолжить Покупки</a>
+    </div>
   </section>
 </body>
 </html>

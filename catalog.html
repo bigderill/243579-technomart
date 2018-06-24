@@ -413,11 +413,16 @@
       </div>
     </section>
   </footer>
-  <section class="modal modal-cart visually-hidden">
-    <h2 class="item-added">Товар добавлен в корзину</h2>
-    <a class="checkout btn">Оформить заказ</a>
-    <button class="continue-btn">Продолжить покупки</button>
-    <button class="modal-close" type="btn"><span class="visually-hidden">Закрыть окно и продолжить</span></button>
+  <section class="modal-add-product modal-content-show visually-hidden">
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть окно</span>
+    </button>
+    <span class="icon"></span>
+    <span>Товар добавлен в корзину!</span>
+    <div class="actions-block">
+      <a class="btn btn-checkout" href="#ordering">Оформить заказ</a>
+      <a class="btn btn-continue" href="#">Продолжить Покупки</a>
+    </div>
   </section>
 </body>
 </html>

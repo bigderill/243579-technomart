@@ -1359,29 +1359,6 @@ h1 {
 } 
 
 
-/*-----Модальные окна-----------*/
-.contact-form {
-	font-size: 18px;
-	line-height: 18px;
-	color: #000000;
-}
-
-.contact-form input[type="text"],
-.contact-form textarea[name="text"] {
-	outline: 2px solid #d7dcde;
-}
-
-
-.contact-form input[type="text"]:focus,
-.contact-form textarea[name="text"]:focus {
-	outline: 2px solid #ee3643;
-}
-
-.contact-form input[type="text"]:hover,
-.contact-form textarea[name="text"]:hover {
-	outline: 2px solid #b5b5b5;
-}
-
 
 /* Элементы каталога */
 
@@ -1539,8 +1516,7 @@ h1 {
 	left: 11px;
 	background: url(../img/icon-right-small.svg) no-repeat 0 0;
 }
-
-.catalog-page::after, 
+ 
 .tools-page::after {
 	content: "";
 	position: absolute;
@@ -2026,4 +2002,237 @@ h1 {
 .catalog-main {
 	display: flex;
 	flex-direction: column;
+}
+
+/*--------Форма обратной связи----------*/
+
+.modal-write-us, .modal-map {
+    position: relative;
+    top: 5%;
+    left: 50%;
+    z-index: 200;    
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: block;
+    -webkit-animation: bounce .4s;
+    animation: bounce .4s;
+}
+
+
+.modal-add-product, 
+.modal-map, 
+.modal-write-us {
+	/* display: none; */
+    background: #fff;
+    box-shadow: 0 30px 50px rgba(0,0,0,.7);
+}
+
+.modal-add-product, 
+.modal-write-us {
+    border-top: 7px solid #ee3643;
+    width: 620px;
+}
+
+.contact-form {
+}
+
+.form-answer {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: stretch;
+	margin: 45px 80px 0;
+}
+
+.modal-write-us input[type=text],
+.modal-write-us input[type=e-mail],
+.modal-write-us textarea, 
+.modal-write-us label {
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+    outline: none;
+}
+
+.form-answer span, 
+.modal-write-us label {
+    font-size: 18px;
+    font-family: "Cuprum","Arial",sans-serif;
+}
+
+.form-answer span {
+    display: inline-block;
+    margin: 0 0 9px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.form-answer span, 
+.modal-write-us label {
+    font-size: 18px;
+    font-family: "Cuprum","Arial",sans-serif;
+}
+
+.modal-write-us input[type=text],
+.modal-write-us input[type=e-mail] {
+	box-sizing: border-box;
+    width: 220px;
+    margin-bottom: 19px;
+    padding: 8px 2px 10px 8px;
+    padding-left: 14px;
+    font-size: 13px;
+    font-family: "PT Sans","Arial",sans-serif;
+    text-align: left;
+    color: #999;
+    background: #fff;
+    border: 2px solid #d7dcde;
+    border-radius: 5px;
+}
+
+.modal-write-us textarea {
+    margin-bottom: 24px;
+    padding: 5px 0 0 12px;
+    font-size: 13px;
+    font-family: "PT Sans","Arial",sans-serif;
+    color: #a9a9a9;
+    border: 2px solid #d7dcde;
+}
+
+.form-btn {
+    padding: 37px 0;
+    background: #f1f1f1;
+}
+
+.form-btn .btn {
+    width: 460px;
+    margin: 0 auto;
+    padding: 11px 50px 8px;
+    font-family: "Cuprum","Arial",sans-serif;
+    text-align: center;
+    outline: none;
+    border: none;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.form-btn .btn:active {
+    background-color: #ba2732;
+}
+
+.form-btn .btn:focus, 
+.form-btn .btn:hover {
+    background-color: #ca2c37;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 22px;
+    height: 22px;
+    background: url(../img/icon-close.png) no-repeat 0 0;
+    border: none;
+    cursor: pointer;
+}
+
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="e-mail"]:focus {
+	border-color: #ee3643;
+}
+
+.contact-form textarea[name="text"]:focus {
+	border-color: #ee3643;
+}
+
+.contact-form input[type="text"]:hover,
+.contact-form textarea[name="text"]:hover {
+	border-color: #b5b5b5;
+}
+
+
+.modal-content-show,
+.modal-show-map {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    z-index: 200;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: block;
+    -webkit-animation: bounce .4s;
+    animation: bounce .4s;
+}
+
+.modal-map {
+    width: 940px;
+    height: 448px;
+}
+
+.modal-add-product .icon {
+    position: relative;
+    display: inline-block;
+    margin: 47px 32px 50px 80px;
+    width: 67px;
+    height: 67px;
+    line-height: 42px;
+    font-family: "Arial",sans-serif;
+    vertical-align: middle;
+    text-decoration: none;
+    background: #693;
+    border-radius: 50px;
+}
+
+.modal-add-product .icon::before {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    background: url(../img/icon-added.png) no-repeat 0 0;
+}
+
+.icon+span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+.actions-block {
+	display: flex;
+    padding: 38px 0 36px;
+    text-align: center;
+    font-size: 0;
+    line-height: 0;
+    background: #f1f1f1;
+}
+
+.actions-block .btn {
+    padding: 11px 49px;
+    margin-right: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.actions-block .btn, .icon+span {
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Cuprum","Arial",sans-serif;
+    color: #000;
+    background: #fff;
+}
+
+.actions-block .btn-checkout {
+    color: #fff;
+    background: #ee3643;
+    margin-left: 80px;
+}
+
+.add-product-button .btn:last-child {
+    margin-right: 0;
 }
