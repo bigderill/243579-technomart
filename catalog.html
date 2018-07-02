@@ -31,7 +31,7 @@
 		</section>
 		<section class="middle-menu">
 			<div class="container">
-				<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+				<h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 				<section class="contacts">
 					<h2 class="visually-hidden">Контактная информация</h2>
 					<a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -106,7 +106,7 @@
 							</div>
 							<div class="price-controls">
 								<input class="price-min" type="text" name="price-min" value="0">
-								<span>—</span>
+								<span class="price-dash">—</span>
 								<input class="price-max" type="text" name="price-min" value="30000">
 							</div>
 						</div>
@@ -115,23 +115,23 @@
 							<ul class="brand-list">
 								<li>
 									<input type="checkbox" name="brand1" id="brand1" value="Bosch" checked>
-									<label for="brand1">Bosch</label>
+									<label for="brand1" class="brand">Bosch</label>
 								</li>
 								<li>
 									<input type="checkbox" name="brand2" id="brand2" value="Интерскол">
-									<label for="brand2">Интерскол</label>
+									<label for="brand2" class="brand">Интерскол</label>
 								</li>
 								<li>
 									<input type="checkbox" name="brand3" id="brand3" value="Makita" checked>
-									<label for="brand3">Makita</label>
+									<label for="brand3" class="brand">Makita</label>
 								</li>
 								<li>
 									<input type="checkbox" name="brand4" id="brand4" value="Dewalt">
-									<label for="brand4">Dewalt</label>
+									<label for="brand4" class="brand">Dewalt</label>
 								</li>
 								<li>
 									<input type="checkbox" name="brand5" id="brand5" value="Hitachi">
-									<label for="brand5">Hitachi</label>
+									<label for="brand5" class="brand">Hitachi</label>
 								</li>
 							</ul>
 						</div>        
@@ -424,11 +424,27 @@
 			<span class="visually-hidden">Закрыть окно</span>
 		</button>
 		<span class="icon"></span>
-		<span>Товар добавлен в корзину!</span>
+		<span class="item-added">Товар добавлен в корзину!</span>
 		<div class="actions-block">
 			<a class="btn btn-checkout" href="#ordering">Оформить заказ</a>
 			<a class="btn btn-continue" href="#">Продолжить Покупки</a>
 		</div>
 	</section>
+	<script>
+		var cartLink = document.querySelector(".buy-btn");	
+
+			var cartPopup = document.querySelector(".modal-add-product");
+			var cartClose = cartPopup.querySelector(".modal-close");
+
+			cartLink.addEventListener("click", function (evt) {
+			evt.preventDefault();
+			cartPopup.classList.remove("visually-hidden");
+			});
+
+			cartClose.addEventListener("click", function (evt) {
+			evt.preventDefault();
+			cartPopup.classList.add("visually-hidden");
+			});	
+	</script>
 </body>
 </html>
