@@ -1223,6 +1223,7 @@ img {
 
 .contacts-block img {
 	margin-top: 30px;
+	cursor: pointer;
 }
 
 /*------------ФУТЕР---------------*/
@@ -1439,7 +1440,7 @@ img {
 
 /* Элементы каталога */
 
-.catalog-page .header {
+.catalog .header {
 	margin-bottom: 23px;
 }
 
@@ -1996,7 +1997,7 @@ img {
 	opacity: 0.3;
 }
 
-.catalog-page .catalog-item:nth-child(3n) {
+.catalog .catalog-item:nth-child(3n) {
 	margin-right: 0;
 }
 
@@ -2120,22 +2121,58 @@ img {
 
 /*--------Форма обратной связи----------*/
 
-.modal, 
-.modal-add-product {
+@keyframes bounce {
+  0% {
+    transform: translateY(-1000px);
+   }
+
+  70% {
+    transform: translateY(10px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+    
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal {
 	position: fixed;
+	display: none;
 	top: 5%;
-	left: 50%;   
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
-	display: block;
-	-webkit-animation: bounce .4s;
-	animation: bounce .4s;
+	left: 30%;  
 	background: #fff;
 	box-shadow: 0 30px 50px rgba(0,0,0, 0.7);
 	z-index: 300;
 }
 
-.modal-add-product, 
+.modal.add-product, 
 .modal.write-us {
 	border-top: 7px solid #ee3643;
 	width: 620px;
@@ -2143,9 +2180,16 @@ img {
 
 .modal-show {
 	display: block;
+
+	-webkit-animation: bounce 0.6s;
+	animation: bounce 0.6s;
 }
 
-.modal-overlay {
+.modal-error {
+	-webkit-animation: shake 0.6s;
+	animation: shake 0.6s;
+}
+.modal .overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -2260,6 +2304,7 @@ img {
 }
 
 .contact-form input[type="text"]:hover,
+.contact-form input[type="email"]:hover,
 .contact-form textarea[name="text"]:hover {
 	border-color: #b5b5b5;
 }
@@ -2275,8 +2320,8 @@ img {
 	height: 610px;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-	-webkit-animation: bounce .4s;
-	animation: bounce .4s;
+	-webkit-animation: bounce 0.4s;
+	animation: bounce 0.4s;
 }
 
 .modal-map p {
@@ -2296,11 +2341,11 @@ img {
 
 /*---------Товар в корзине--------*/
 
-.modal-add-product {
+.modal.add-product {
 	z-index: 300;
 }
 
-.modal-add-product .icon {
+.add-product .icon {
 	position: relative;
 	display: inline-block;
 	margin: 47px 32px 50px 80px;
@@ -2314,7 +2359,7 @@ img {
 	border-radius: 50px;
 }
 
-.modal-add-product .icon::before {
+.add-product .icon::before {
 	content: "";
 	position: absolute;
 	width: 67px;
@@ -2347,7 +2392,7 @@ img {
 }
 
 .actions-block .btn, 
-.icon+span {
+.icon + span {
 	line-height: 18px;
 	font-weight: 400;
 	font-style: normal;
@@ -2365,4 +2410,3 @@ img {
 .add-product-button .btn:last-child {
 	margin-right: 0;
 }
-

@@ -7,12 +7,12 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css"> 
 	<link rel="stylesheet" type="text/css" href="css/style.css"> 
 </head>
-<body class="catalog-page">
+<body class="catalog">
 	<header class="header">
 		<section class="top-menu">
 			<div class="container">
 				<h2>
-					<a class="logo" href="#">Техномарт</a>
+					<a class="logo" href="index.html">Техномарт</a>
 				</h2>
 				<form class="search-form" method="post" action="https://echo.htmlacademy.ru">
 					<input type="search" name="search" id="search-field" placeholder="Поиск:" class="find">
@@ -416,7 +416,7 @@
 			</div>
 		</section>
 	</footer>
-	<section class="modal-add-product visually-hidden">
+	<section class="modal add-product">
 		<h2>
 			<span class="visually-hidden">Товар в корзине</span>
 		</h2>
@@ -431,20 +431,7 @@
 		</div>
 	</section>
 	<script>
-		var cartLink = document.querySelector(".buy-btn");	
 
-			var cartPopup = document.querySelector(".modal-add-product");
-			var cartClose = cartPopup.querySelector(".modal-close");
-
-			cartLink.addEventListener("click", function (evt) {
-			evt.preventDefault();
-			cartPopup.classList.remove("visually-hidden");
-			});
-
-			cartClose.addEventListener("click", function (evt) {
-			evt.preventDefault();
-			cartPopup.classList.add("visually-hidden");
-			});	
 	</script>
 </body>
 </html>
