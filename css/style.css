@@ -669,11 +669,13 @@ img {
 
 .slide-1 {
 	display: none;
+	background-color: #bdac9a;
 	background: url("../img/perforator-slide.jpg") no-repeat 0 0;
 }
 
 .slide-2 {
 	display: none;
+	background-color: #685c53;
 	background: url("../img/drill-slide.jpg") no-repeat 0 0;
 }
 
