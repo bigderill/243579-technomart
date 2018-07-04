@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>HTML Academy: Техномарт</title>
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -429,21 +430,18 @@
 			<div class="form-answer">
 				<label for="fullname">
 					<span>Ваше имя:</span>
-					<br>
 					<input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия" 
 					onfocus="placeholder='';" 
 					onblur="placeholder='Имя Фамилия';">
 				</label>
 				<label for="email-field">
 					<span>Ваш e-mail:</span>
-					<br>
 					<input type="email" name="email" id="email-field" placeholder="email@example.com" 
 						onfocus="placeholder='';" 
 						onblur="placeholder='email@example.com';">
 				</label>
 				<label for="text-field">
 					<span>Текст письма:</span>
-					<br>  
 					<textarea name="text" id="text-field" cols="61" rows="6" placeholder="В свободной форме" 
 						onfocus="placeholder='';" 
 						onblur="placeholder='В свободной форме';">В свободной форме
@@ -478,20 +476,15 @@
 	</section>
 	<div class="modal overlay"></div>
 	<script>
-		/*-----Форма обратной связи-----*/
-
-var link = document.querySelector(".lost-btn");
-
-var popupForm = document.querySelector(".write-us");
-var overlay = document.querySelector(".overlay");
-var close = popupForm.querySelector(".modal-close");
-
-var contactForm = popupForm.querySelector(".contact-form");
-var name = popupForm.querySelector("[name=fullname]");
-var mail = popupForm.querySelector("[name=email]");
-
-var isStorageSupport = true;
-var storage = "";
+	/*-----Форма обратной связи-----*/
+	var link = document.querySelector(".lost-btn");
+	var popupForm = document.querySelector(".write-us");
+	var overlay = document.querySelector(".overlay");
+	var close = popupForm.querySelector(".modal-close");
+	var contactForm = popupForm.querySelector(".contact-form");
+	var name = popupForm.querySelector("[name=fullname]");
+	var isStorageSupport = true;
+	var storage = "";
 
 	try {
 		storage = localStorage.getItem("fullname");
@@ -506,12 +499,12 @@ var storage = "";
 		fullname.focus();
 	});
 
-		if (storage) {
-			name.value = storage;
-			email.focus();
-		} else {
-			fullname.focus();
-		}
+	if (storage) {
+		name.value = storage;
+		email.focus();
+	} else {
+		fullname.focus();
+	}
 
 	close.addEventListener("click", function (evt) {
 		evt.preventDefault();
@@ -544,10 +537,9 @@ var storage = "";
 		}
 	});
 
-/*-----Карта-----*/
+	/*-----Карта-----*/
 
 	var mapLink = document.querySelector(".contacts-button-map");
-
 	var mapPopup = document.querySelector(".modal-map");
 	var mapClose = mapPopup.querySelector(".modal-close");
 
@@ -571,55 +563,8 @@ var storage = "";
 					overlay.classList.remove("modal-show-overlay");
 				}
 			}
-		});
-
-/*-----Товар в корзине-----*/
-
-	var cartLink = document.querySelectorAll(".buy-btn");
-
-	var cartPopup = document.querySelector(".add-product");
-	var cartClose = cartPopup.querySelector(".modal-close");
-	var cartContinue = cartPopup.querySelector(".btn-continue");
-
-	if (cartLink) {
-		for (var i = 0; i < cartLink.length; i++) {
-			cartLink[i].addEventListener("click", function (evt) {
-				evt.preventDefault();
-				cartPopup.classList.add("modal-show");
-				overlay.classList.add("modal-show-overlay");
-				})
-			};
-		}
-
-	if (overlay) {
-		overlay.addEventListener("click", function (evt) {
-			evt.preventDefault();
-			overlay.classList.remove("modal-show-overlay");
-			cartPopup.classList.remove("modal-show");
-		});
-	}
-
-	cartClose.addEventListener("click", function (evt) {
-		evt.preventDefault();
-		cartPopup.classList.remove("modal-show");
-		overlay.classList.remove("modal-show-overlay");
-	});
-
-	cartContinue.addEventListener("click", function (evt) {
-		evt.preventDefault();
-		cartPopup.classList.remove("modal-show");
-		overlay.classList.remove("modal-show-overlay");
-	});
-
-	window.addEventListener("keydown", function (evt) {
-		evt.preventDefault();
-			if (evt.keyCode === 27) {
-				if (cartPopup.classList.contains("modal-show")) {
-					cartPopup.classList.remove("modal-show");
-					overlay.classList.remove("modal-show-overlay");
-				}
-			}
 	});
 	</script>
+	<script src="js/script-cart.js"></script>
 </body>
 </html>

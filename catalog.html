@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>HTML Academy: Техномарт</title>
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css"> 
 	<link rel="stylesheet" type="text/css" href="css/style.css"> 
 </head>
@@ -35,7 +36,7 @@
 				<section class="contacts">
 					<h2 class="visually-hidden">Контактная информация</h2>
 					<a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-					<p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+					<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				</section>
 				<section class="login-block">
 					<h2>
@@ -432,52 +433,6 @@
 		</div>
 	</section>
 	<div class="modal overlay"></div>
-	<script>
-	var cartLink = document.querySelectorAll(".buy-btn");
-	var cartPopup = document.querySelector(".add-product");
-	var cartClose = cartPopup.querySelector(".modal-close");
-	var cartContinue = cartPopup.querySelector(".btn-continue");
-	var overlay = document.querySelector(".overlay");
-
-	if (cartLink) {
-		for (var i = 0; i < cartLink.length; i++) {
-			cartLink[i].addEventListener("click", function (evt) {
-				evt.preventDefault();
-				cartPopup.classList.add("modal-show");
-				overlay.classList.add("modal-show-overlay");
-				})
-			};
-		}
-
-	if (overlay) {
-		overlay.addEventListener("click", function (evt) {
-			evt.preventDefault();
-			overlay.classList.remove("modal-show-overlay");
-			cartPopup.classList.remove("modal-show");
-		});
-	}
-
-	cartClose.addEventListener("click", function (evt) {
-		evt.preventDefault();
-		cartPopup.classList.remove("modal-show");
-		overlay.classList.remove("modal-show-overlay");
-	});
-
-	cartContinue.addEventListener("click", function (evt) {
-		evt.preventDefault();
-		cartPopup.classList.remove("modal-show");
-		overlay.classList.remove("modal-show-overlay");
-	});
-
-	window.addEventListener("keydown", function (evt) {
-		evt.preventDefault();
-			if (evt.keyCode === 27) {
-				if (cartPopup.classList.contains("modal-show")) {
-					cartPopup.classList.remove("modal-show");
-					overlay.classList.remove("modal-show-overlay");
-				}
-			}
-	});
-	</script>
+	<script src="js/script-cart.js"></script>
 </body>
 </html>
