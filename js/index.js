@@ -15,7 +15,8 @@ var storage = "";
 
 	try {
 		storage = localStorage.getItem("fullname");
-	} catch (err) {
+	} 
+	catch (err) {
 		isStorageSupport = false;
 	}
 
@@ -26,12 +27,13 @@ var storage = "";
 		fullname.focus();
 	});
 
-		if (storage) {
-			name.value = storage;
-			email.focus();
-		} else {
-			fullname.focus();
-		}
+	if (storage) {
+		name.value = storage;
+		email.focus();
+	} 
+	else {
+		fullname.focus();
+	}
 
 	close.addEventListener("click", function (evt) {
 		evt.preventDefault();
@@ -42,11 +44,12 @@ var storage = "";
 
 	contactForm.addEventListener("submit", function (evt) {
 		if (!name.value || !email.value) {
-		evt.preventDefault();
-		popupForm.classList.add("modal-error");
-		popupForm.offsetWidth = popupForm.offsetWidth;
-		console.log("Введите контактные данные");
-		} else {
+			evt.preventDefault();
+			popupForm.classList.add("modal-error");
+			popupForm.offsetWidth = popupForm.offsetWidth;
+			console.log("Введите контактные данные");
+		} 
+		else {
 			if (isStorageSupport) {
 				localStorage.setItem("fullname", name.value);
 			}
@@ -66,10 +69,10 @@ var storage = "";
 
 /*-----Карта-----*/
 
-	var mapLink = document.querySelector(".contacts-button-map");
+var mapLink = document.querySelector(".contacts-button-map");
 
-	var mapPopup = document.querySelector(".modal-map");
-	var mapClose = mapPopup.querySelector(".modal-close");
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = mapPopup.querySelector(".modal-close");
 
 	mapLink.addEventListener("click", function (evt) {
 		evt.preventDefault();
@@ -85,10 +88,10 @@ var storage = "";
 
 	window.addEventListener("keydown", function (evt) {
 		evt.preventDefault();
-			if (evt.keyCode === 27) {
-				if (mapPopup.classList.contains("modal-show")) {
-					mapPopup.classList.remove("modal-show");
-					overlay.classList.remove("modal-show-overlay");
-				}
+		if (evt.keyCode === 27) {
+			if (mapPopup.classList.contains("modal-show")) {
+				mapPopup.classList.remove("modal-show");
+				overlay.classList.remove("modal-show-overlay");
 			}
-		});
+		}
+	});

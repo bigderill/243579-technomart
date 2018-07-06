@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<title>HTML Academy: Техномарт</title>
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 </head>
 <body class="catalog">
 	<header class="header">
@@ -31,16 +31,18 @@
 		</section>
 		<section class="middle-menu">
 			<div class="container">
-				<h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+				<div class="main-title">
+					<h1 class="visually-hidden">Каталог</h1>
+					<p>Интернет-магазин строительных материалов</p>
+					<p>и инструментов для ремонта</p>
+				</div>
 				<section class="contacts">
 					<h2 class="visually-hidden">Контактная информация</h2>
 					<a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
 					<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				</section>
 				<section class="login-block">
-					<h2>
-						<span class="visually-hidden">Персональная информация</span>
-					</h2>
+					<h2 class="visually-hidden">Персональная информация</h2>
 					<a class="account-btn">Равшан Джамшутович</a>
 					<a class="logout-icon"><span class="visually-hidden">Выход</span></a>
 					<div class="account">
@@ -123,7 +125,7 @@
 									<label for="brand2" class="brand">Интерскол</label>
 								</li>
 								<li>
-									<input type="checkbox" name="brand3" id="brand3" value="Makita" checked>
+									<input type="checkbox" name="brand3" id="brand3" value="Makita" checked disabled>
 									<label for="brand3" class="brand">Makita</label>
 								</li>
 								<li>
@@ -140,7 +142,7 @@
 							<h3>Питание:</h3>
 							<ul class="supply-list">
 								<li>
-									<input type="radio" name="supply" id="radio1" value="battery" checked>
+									<input type="radio" name="supply" id="radio1" value="battery" checked disabled>
 									<label for="radio1">Аккумуляторные</label>
 									<input type="radio" name="supply" id="radio2" value="mps">
 									<label for="radio2">Сетевые</label>
@@ -207,9 +209,6 @@
 							<span class="price">25500 Р.</span>
 						</li>
 						<li class="catalog-item">
-							<div class="flag-new">
-								<span class="visually-hidden">новинка</span>
-							</div>
 							<div class="actions">
 								<a class="buy-btn" href="#">Купить</a>
 								<a class="bookmark-btn" href="#">В закладки</a>
@@ -238,9 +237,6 @@
 							<span class="price">15500 Р.</span>
 						</li>
 						<li class="catalog-item">
-							<div class="flag-new">
-								<span class="visually-hidden">новинка</span>
-							</div>
 							<div class="actions">
 								<a class="buy-btn" href="#">Купить</a>
 								<a class="bookmark-btn" href="#">В закладки</a>
@@ -269,9 +265,6 @@
 							<span class="price">12500 Р.</span>
 						</li>
 						<li class="catalog-item">
-							<div class="flag-new">
-								<span class="visually-hidden">новинка</span>
-							</div>
 							<div class="actions">
 								<a class="buy-btn" href="#">Купить</a>
 								<a class="bookmark-btn" href="#">В закладки</a>
@@ -329,11 +322,10 @@
 				<div class="perforators-content">
 					<h2>Пара слов о перфораторах</h2>
 					<p>
-						Перфоратор - универсальный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне
+						Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
 					</p>
 					<p>
-						Существуют электромеханические и пневматические перфораторы. Современные модели могу выполнять функции дрели, шуруповерта
-						и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+						Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
 					</p>
 				</div>
 			</div>
@@ -386,7 +378,7 @@
 			<div class="container">
 				<h2 class="visually-hidden">Правовая информация</h2>
 				<p class="copyright">
-					© 2010-2017 Компания «Техномарт»<br>
+					© 2010-2017 Компания «Техномарт»
 					Все права защищены
 				</p>
 				<ul class="footer-social">

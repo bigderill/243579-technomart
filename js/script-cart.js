@@ -1,9 +1,9 @@
 /*-----Товар в корзине-----*/
-	var cartLink = document.querySelectorAll(".buy-btn");
-	var cartPopup = document.querySelector(".add-product");
-	var cartClose = cartPopup.querySelector(".modal-close");
-	var cartContinue = cartPopup.querySelector(".btn-continue");
-	var overlay = document.querySelector(".overlay");
+var cartLink = document.querySelectorAll(".buy-btn");
+var cartPopup = document.querySelector(".add-product");
+var cartClose = cartPopup.querySelector(".modal-close");
+var cartContinue = cartPopup.querySelector(".btn-continue");
+var overlay = document.querySelector(".overlay");
 
 	if (cartLink) {
 		for (var i = 0; i < cartLink.length; i++) {
@@ -11,9 +11,9 @@
 				evt.preventDefault();
 				cartPopup.classList.add("modal-show");
 				overlay.classList.add("modal-show-overlay");
-				})
-			};
-		}
+			})
+		};
+	}
 
 	if (overlay) {
 		overlay.addEventListener("click", function (evt) {
@@ -37,10 +37,10 @@
 
 	window.addEventListener("keydown", function (evt) {
 		evt.preventDefault();
-			if (evt.keyCode === 27) {
-				if (cartPopup.classList.contains("modal-show")) {
-					cartPopup.classList.remove("modal-show");
-					overlay.classList.remove("modal-show-overlay");
-				}
+		if (evt.keyCode === 27) {
+			if (cartPopup.classList.contains("modal-show")) {
+				cartPopup.classList.remove("modal-show");
+				overlay.classList.remove("modal-show-overlay");
 			}
+		}
 	});

@@ -90,7 +90,7 @@ img {
 	color: #ffffff;
 	background-color: #ee3643;
 	-webkit-box-shadow: 0 6px 0 0 rgba(181,41,51,0.9);
-		box-shadow: 0 6px 0 0 rgba(181,41,51,0.9);
+			box-shadow: 0 6px 0 0 rgba(181,41,51,0.9);
 	text-transform: uppercase;
 	padding: 12px 55px 6px 56px;
 	cursor: pointer;
@@ -210,6 +210,10 @@ img {
 	opacity: 0.3;
 }
 
+.cart {
+	padding-left: 47px;
+}
+
 .cart::before {
 	content: "";
 	position: absolute;
@@ -276,9 +280,6 @@ img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: end;
-		-ms-flex-pack: end;
-			justify-content: flex-end;
 }
 
 .main-title {
@@ -288,11 +289,17 @@ img {
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 23px;
-	font-weight: 500;
+	font-weight: 400;
 	font-style: italic;
 	color: #ee3643;
-	max-width: 200px;
-	margin-right: 60px;
+	margin-left: 52px;
+	margin-top: 4px;
+	margin-right: 67px;
+}
+
+.main-title p {
+	margin: 0;	
+	width: 200px;
 }
 
 .contacts {
@@ -316,15 +323,15 @@ img {
 	line-height: 21px;
 	color: #ee3643;	
 	border: 3px solid #ffffff;
-	padding-left: 75px;
-	padding-top: 12px;
+	padding-left: 72px;
+	padding-top: 10px;
 }
 
 .phone::before {
 	content: "";
 	position: absolute;
 	top: 12px;
-	left: 15px;
+	left: 13px;
 	width: 19px;
 	height: 19px;
 	background-image: url("../img/icon-phone.svg"); 
@@ -340,7 +347,7 @@ img {
 	font-weight: normal;
 	line-height: 24px;
 	color: #32425c;
-	margin-top: 10px;
+	margin-top: 5px;
 }
 
 .log-in {
@@ -356,7 +363,7 @@ img {
 			box-sizing: border-box;
 	width: 122px;
 	height: 45px;
-	padding: 12px 25px 12px 50px;
+	padding: 12px 25px 12px 45px;
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
@@ -379,7 +386,7 @@ img {
 			box-sizing: border-box;
 	width: 150px;
 	height: 45px;
-	padding: 12px 25px;
+	padding: 12px 23px;
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
@@ -404,7 +411,7 @@ img {
 }
 
 .catalog .nav-list {
-	margin-top: 20px;
+	margin-top: 22px;
 	margin-bottom: 55px;
 }
 
@@ -414,16 +421,14 @@ img {
 	display: flex;
 	-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-	-webkit-box-pack: center;
-		-ms-flex-pack: center;
-			justify-content: center;
 	list-style: none;
 	width: 100%;
 	min-height: 55px;
 	background-color: #32425c;
 	padding: 0;
-	margin-bottom: 60px;
-	border-bottom: 5px solid #293449;
+	margin-bottom: 64px;
+	-webkit-box-shadow: 0 5px 0 0 #293449;
+			box-shadow: 0 5px 0 0 #293449;
 }
 
 .nav-item {
@@ -440,9 +445,14 @@ img {
 	background-color: #1d2739;
 }
 
+.nav-item:first-of-type a{
+	padding-left: 51px;
+	padding-right: 34px;
+}
+
 .nav-item a {
-	display: block;
-	padding: 20px 31px;
+	display: inline-block;
+	vertical-align: middle;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 17px;
@@ -450,6 +460,23 @@ img {
 	font-family: "Cuprum", "Arial", sans-serif;
 	text-decoration: none;
 	color: #fff;
+	padding-top: 20px;
+	padding-bottom: 18px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.nav-item:nth-child(3) a {
+	padding-left: 29px;
+}
+
+.nav-item:nth-child(5) a {
+	padding-left: 29px;
+	padding-right: 31px;
+}
+
+.nav-item:nth-child(7) a {
+	padding-left: 33px;
 }
 
 .features {
@@ -509,11 +536,11 @@ img {
 	background-image: url("../img/materials-icon.svg");
 }
 
-.flag-new {
+.features .materials::after {
+	content: "";
 	position: absolute;
 	top: 0;
 	right: 0;
-	z-index: 10;
 	width: 60px;
 	height: 60px;
 	background: url("../img/new-flag.png") no-repeat 0 0;
@@ -811,6 +838,16 @@ img {
 	text-align: center;
 }
 
+.index .catalog-item:nth-child(4)::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 60px;
+	background: url("../img/new-flag.png") no-repeat 0 0;
+}
+
 .catalog-item:last-child {
 	margin-right: 0;
 }
@@ -822,13 +859,12 @@ img {
 
 .catalog-item .actions {
 	position: absolute;
-	top: 0;
+	top: 5px;
 	left: 0;
 	width: 218px;
 	height: 88px;
 	padding: 40px 0;
 	background-color: rgba(255,255,255,0.9);
-	z-index: 10;
 }
 
 .item-title {
@@ -924,8 +960,9 @@ img {
 }
 
 .catalog-item .actions {
-	display:none;
+	display: none;
 }
+
 .catalog-item:hover .actions {
 	display:block;
 }
@@ -1219,7 +1256,7 @@ img {
 }
 
 .information {
-	margin-bottom: 84px;
+	margin-bottom: 86px;
 }
 
 .information h2,
@@ -1237,6 +1274,10 @@ img {
 	margin-bottom: 27px;
 }
 
+.contacts-block p {
+	width: 220px;
+}
+
 .information p,
 .perforators-about p {
 	margin: 0;
@@ -1248,18 +1289,18 @@ img {
 	color: #000000;
 }
 
-.company-about p {
-	width: 530px;
-}
-
 .company-about p:nth-child(2) {
 	padding-bottom: 25px;
+}
+
+.company-about p:nth-child(3) {
+	width: 400px;
 }
 
 .transportation-companies {
 	padding: 0;
 	margin: 0;
-	margin: 11px 0 24px 36px;
+	margin: 11px 0 28px 36px;
 	position: relative;
 	list-style: none;
 	font-family: "Cuprum", "Arial", sans-serif;
@@ -1345,7 +1386,6 @@ img {
 	-webkit-box-sizing: border-box;	
 			box-sizing: border-box;
 	width: 220px;
-	min-height: 63px;
 	font-size: 30px;
 	font-weight: normal;
 	line-height: 30px;
@@ -1354,12 +1394,11 @@ img {
 	-webkit-box-shadow: 0 6px 0 0 rgba(181,41,51,0.9);
 			box-shadow: 0 6px 0 0 rgba(181,41,51,0.9);
 	text-transform: uppercase;
-	padding: 16px 42px;
+	padding: 20px 42px 12px;
 }
 
 .footer-contacts p {
-	padding-left: 5px;
-	padding-top: 10px;
+	padding-left: 9px;
 	width: 326px; 
 }
 
@@ -1444,7 +1483,7 @@ img {
 }
 
 .footer-contacts p:first-of-type {
-	margin-top: 30px;
+	margin-top: 32px;
 }
 
 .footer-nav-bottom a {
@@ -1470,13 +1509,18 @@ img {
 }
 
 .copyright {
+	align-self: center;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: normal;
 	color: #ffffff;
-	padding-top: 22px;
-	padding-left: 3px;
-	margin-right: 124px;
+	padding-top: 20px;
+	margin-right: 110px;
+	width: 240px;
+}
+
+.copyright p {
+	margin: 0;
 }
 
 .footer-social {
@@ -1488,7 +1532,7 @@ img {
 		-ms-flex-pack: center;
 			justify-content: center;	
 	padding-top: 21px;
-	margin-right: 38px;
+	margin-right: 36px;
 }
 
 .social-btn {
@@ -1536,7 +1580,7 @@ img {
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
-	margin-top: 39px;
+	margin-top: 37px;
 	margin-left: 35px;
 	margin-bottom: 0px;
 	padding: 0;
@@ -1565,7 +1609,7 @@ img {
 	opacity: 0.5;
 } 
 
-/* Элементы каталога */
+/* -------------Элементы каталога ----------------*/
 
 .catalog .header {
 	margin-bottom: 23px;
@@ -1573,6 +1617,7 @@ img {
 
 .cart.active {
 	background-color: #ee3643;
+	padding-left: 50px;
 }
 
 .catalog .main-title {
@@ -1588,10 +1633,7 @@ img {
 .login-block {
 	position: relative;
 	margin-left: 50px;
-}
-
-.login-block h2 {
-	margin: 0;
+	margin-bottom: 16px;
 }
 
 .account-btn {
@@ -1606,7 +1648,7 @@ img {
 	line-height: 21px;
 	color: #000000;
 	background-color: #ffffff;
-	padding: 12px 65px 14px 46px;
+	padding: 12px 65px 14px 48px;
 	cursor: pointer;
 }
 
@@ -1623,8 +1665,8 @@ img {
 .logout-icon {
 	position: absolute;
 	display: block;
-	top: 13px;
-	right: 14px;
+	top: 15px;
+	right: 10px;
 	width: 20px;
 	height: 20px;
 	background: url("../img/icon-logout.png") no-repeat 0 0;
@@ -1646,7 +1688,7 @@ img {
 
 .account {
 	list-style: none;
-	margin-top: 5px;
+	margin-top: 3px;
 }
 
 .account a {
@@ -1703,8 +1745,12 @@ img {
 	color: #32425c;
 }
 
-.catalog-page .nav-list {
-	margin-top: 18px;
+.catalog .header {
+	margin-bottom: 20px;
+}
+
+.catalog .nav-list {
+	margin-bottom: 65px;
 }
 
 .catalog-nav {
@@ -1938,7 +1984,7 @@ img {
 	cursor: pointer;
 }
 
-.brand-list .brand::before {
+.brand-list input[type=checkbox] + label::after {
 	content: "";
 	position: absolute;
 	width: 26px;
@@ -2004,8 +2050,8 @@ img {
 	background: url("../img/radio-on-sprite.png") no-repeat;
 }
 
-.brand-list input[type=checkbox]:disabled + label:after,
-.supply-list input[type=radio]:disabled + label::after {
+.brand-list input[type=checkbox]:disabled + label,
+.supply-list input[type=radio]:disabled + label {
 	opacity: 0.3;
 }
 
@@ -2184,6 +2230,18 @@ img {
 	margin-top: 0;
 }
 
+.catalog .catalog-item:nth-child(3)::after,
+.catalog .catalog-item:nth-child(5)::after,
+.catalog .catalog-item:nth-child(7)::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 60px;
+	background: url("../img/new-flag.png") no-repeat 0 0;
+}
+
 /*-----Переключатель страниц-----*/
 
 .paginator {
@@ -2256,7 +2314,7 @@ img {
 	font-weight: 400;
 	font-style: normal;
 	line-height: 24px;
-	color: #000;
+	color: #000000;
 	background: #f2f6f8;
 }
 

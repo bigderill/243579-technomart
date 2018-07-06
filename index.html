@@ -4,10 +4,10 @@
 	<meta charset="utf-8">
 	<title>HTML Academy: Техномарт</title>
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.min.css">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">	
 </head>
-<body>
+<body class="index">
 	<header class="header">
 		<section class="top-menu">
 			<div class="container">
@@ -29,7 +29,11 @@
 		</section>
 		<section class="middle-menu">
 			<div class="container">
-				<h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+				<div class="main-title">
+					<h1 class="visually-hidden">Главная</h1>
+					<p>Интернет-магазин строительных материалов</p>
+					<p>и инструментов для ремонта</p>
+				</div>
 				<section class="contacts">
 					<h2 class="visually-hidden">Контактная информация</h2>
 					<a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -79,9 +83,6 @@
 						<section class="feature-item materials">
 							<h3>Материалы</h3>
 							<a href="#">На любой вкус</a>
-							<div class="flag-new">
-								<span class="visually-hidden">новинка</span>
-							</div>
 						</section>
 						<section class="feature-item tools">
 							<h3>Инструмент</h3>
@@ -142,7 +143,7 @@
 					<h2>Популярные товары:</h2>
 					<a href="#" class="items-btn btn">Все популярные товары</a>
 				</div>
-				<ul class="items">        
+				<ul class="items">
 					<li class="catalog-item">
 						<div class="actions">
 							<a class="buy-btn" href="#">Купить</a>
@@ -186,9 +187,6 @@
 						<span class="price">25500 Р.</span>
 					</li>
 					<li class="catalog-item">
-						<div class="flag-new">
-							<span class="visually-hidden">новинка</span>
-						</div>
 						<div class="actions">
 							<a class="buy-btn" href="#">Купить</a>
 							<a class="bookmark-btn" href="#">В закладки</a>
@@ -316,11 +314,11 @@
 				<section class="company-about">
 					<h2>Компания «Техномарт»</h2>
 					<p>
-						Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
+						Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
 						строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
 					</p>
 					<p>
-						Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+						Мы можем доставить ваш товар в самые отдаленные точки России!
 						Техномарт работает со многими транспортными компаниями:
 					</p>
 					<ul class="transportation-companies">
@@ -332,7 +330,7 @@
 				</section>
 				<section class="contacts-block">
 					<h2>Контакты</h2>
-					<p>Вы можете забрать товар сами,<br> заехав в наш офис</p>
+					<p>Вы можете забрать товар сами, заехав в наш офис</p>
 					<img class="contacts-button-map" src="img/small-map.png" width="300" height="158" alt="Карта">
 					<a class="lost-btn btn" href="#">Заблудились? Напишите нам!</a>
 				</section>
@@ -385,10 +383,10 @@
 		<section class="footer-bottom">
 			<div class="container">
 				<h2 class="visually-hidden">Правовая информация</h2>
-				<p class="copyright">
-					© 2010-2017 Компания «Техномарт»<br>
-					Все права защищены
-				</p>
+				<div class="copyright">
+					<p>© 2010-2017 Компания «Техномарт»</p>
+					<p>Все права защищены</p>
+				</div>
 				<ul class="footer-social">
 					<li>
 						<a href="#" class="social-btn vk">
